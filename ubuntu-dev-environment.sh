@@ -41,6 +41,8 @@ wget https://vscode-update.azurewebsites.net/latest/linux-deb-x64/stable -O /tmp
 wget https://github.com/shiftkey/desktop/releases/download/release-2.4.1-linux1/GitHubDesktop-linux-2.4.1-linux1.deb -O /tmp/github_desktop.deb
 # google chrome
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/google_chrome.deb
+# zoom
+wget -c https://zoom.us/client/latest/zoom_amd64.deb -O /tmp/zoom.deb
 # create-react-app
 sudo npm i -g create-react-app
 
@@ -142,6 +144,15 @@ wget -qO - https://hub.unity3d.com/linux/keys/public | sudo apt-key add -
 sudo apt update
 sudo apt-get install unityhub
 sudo apt-get remove unityhub
+
+#-----------------
+
+#--------------------
+clear_and_print 'Install snaps'
+
+sudo snap install postman
+sudo snap install webstorm
+sudo snap install datagrip
 
 #-----------------
 
